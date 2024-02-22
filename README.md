@@ -2,7 +2,8 @@
 This repository contains all the code used to create the graphs in the poster. 
 
 module.py contains the class with all the functions in it.
-usage.py uses this class to create the graphs.
+
+Usage.py uses this class to create the graphs.
 
 auto.py uses this class to automaticaly create a csv file with all the data between two dates. 
 The variable location list defines all the SQM stations that are used to fill the csv.
