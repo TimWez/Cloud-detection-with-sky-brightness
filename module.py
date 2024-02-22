@@ -228,26 +228,4 @@ class Analyser:
             print("Failed to retrieve cloud data")
 
         return stripped_cloud_cover, stripped_time
-
-
-def main():
-    date = datetime(2023, 12, 22)
-    location = 'Groningen-DeHeld'
-    file = "data.dat"
-
-    WHD = Analyser(date, location, file)
-
-    WHD.get_file()
-    WHD.find_prefix_auto(14, 60)
-    WHD.find_location()
-
-    time_data, temp_data, msas_data = WHD.read_file()
-    date_objects = [datetime.strptime(timestamp, '%Y:%m:%d %H:%M:%S') for timestamp in time_data]
-
-    is_moon, moon_alt, moon_frac, frac = WHD.moon_list(date_objects)
-
-    clouds, time = WHD.weather_api('18:00:00', '07:00:00')
-
-
-if __name__ == '__main__':
-    main()
+        
