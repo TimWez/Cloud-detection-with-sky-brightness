@@ -122,7 +122,6 @@ ax2.legend(lines + lines2 + lines3 + lines4, labels +
            labels2 + labels3 + labels4, loc='upper right')
 
 ax.grid()
-plt.savefig("C:\\Users\\Tim\\Downloads\\Verslag ZwarteHaan geen maan", dpi=600)
 
 b = time.time()
 print(f'time = {b-a}')
