@@ -228,4 +228,21 @@ class Analyser:
             print("Failed to retrieve cloud data")
 
         return stripped_cloud_cover, stripped_time
+
+    def second_weather_api(self, start_hour, end_hour):
+        API_key = '8b585636ab718507152e1b4356c60012'
+        lat = self.lat
+        lon = self.lon
+
+        start = start_hour
+        end = end_hour
+
+        url = f'https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&&appid={API_key}'
+
+        response = requests.get(url)
+        data = response.json()
+        return data
+
+
+        return stripped_cloud_cover, stripped_time
         
