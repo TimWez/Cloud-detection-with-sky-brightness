@@ -1,14 +1,14 @@
 # Cloud-detection-with-sky-brightness
-This repository contains all the code used to create the graphs in the poster. 
+This repository contains all the code used to create the graphs in the poster and paper. 
 
-module.py contains the class with all the functions in it.
+The code for the visual graphs can be found in the folder Code for visual graphs. This has a Python file with a class containing all the functions used in the other python files in this repository. 
+The Python file Usage contains the code to create the graphs.
 
-Usage.py uses this class to create the graphs.
+The folder animations contains a Python file that creates an image sequence of all the data files from Washetdonker.nl for a given duration and year. Default this is the whole year 2023. 
+Alle the .mp4 files are created with the image sequences from animations.py. These image sequences are later edited in blender and exported with 10 fps.
 
-auto.py uses this class to automaticaly create a csv file with all the data between two dates. 
-The variable location list defines all the SQM stations that are used to fill the csv.
+The folder Databestanden + code contains the Python file used to automaticaly download al the data from Washetdonker.nl Open Meteo API and Skyfield API. Default this is the whole year 2023. 
+All the data is writen to 1 .csv file. All the .csv files used for the data analysis can also be found in here.
 
-animation.py is used to create a timelapes of all the graphs of a given location in a year. 
-The map with all the graphs can be used as an image sequence to create an mp4. exapples of this can be found in the folder animations.
 
 
