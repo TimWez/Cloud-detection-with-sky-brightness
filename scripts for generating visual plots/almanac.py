@@ -18,6 +18,8 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+# Tim Wezeman made some tiny changes to work with UTC+1 time. (Enabeled already existing code from Daniel Minor.)
+
 # All calculations taken from:
 # Astronomical Algorithms; 2nd Edition, Jean Meeus, Willmann-Bell (1998)
 from math import acos, asin, atan2, cos, fabs, floor, pi, sin, tan
